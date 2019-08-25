@@ -49,8 +49,8 @@ echo.
 echo 正在修改注册表项……请等待
 echo.
 echo.
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v "LegalNoticeCaption" /d %caption% /t REG_SZ /f
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v "LegalNoticeText" /d %contents% /t REG_SZ /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v "LegalNoticeCaption" /d "%caption%" /t REG_SZ /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v "LegalNoticeText" /d "%contents%" /t REG_SZ /f
 ping 127.0.0.1 /n 4 >nul 
 echo.
 echo 运行完毕，5秒后自动退出……
